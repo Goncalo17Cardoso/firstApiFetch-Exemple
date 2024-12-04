@@ -1,0 +1,19 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<button @onclick="FetchData">Get data</button>
+
+@if (produto != null)
+{
+    <h3>@produto.Id</h3>
+    <h3>@produto.Name</h3>
+    <h3>@produto.Brand</h3>
+    <h3>@produto.Category</h3>
+    <h3>@produto.Price</h3>
+    <h3>@produto.Description</h3>
+    <h3>@produto.CreatedAt</h3>
+}
